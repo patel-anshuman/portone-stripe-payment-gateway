@@ -1,0 +1,2 @@
+2024-01-27T12:41:55.367Z [info]: Method: POST, Endpoint: /v1/create_intent, Type: Request, User: Guest
+2024-01-27T12:42:19.844Z [info]: Method: GET, Endpoint: /v1/get_intents, Type: Request, User: Guest
