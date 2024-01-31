@@ -28,14 +28,12 @@ describe('POST /v1/create_intent', () => {
 
 describe('POST /v1/capture_intent/:id', () => {
   it('should capture a payment intent', async () => {
-    // Assume you have a valid payment intent ID
     const validPaymentIntentId = 'pi_3Od9EpSDFbeIRnXw0QI9IccW';
 
     const response = await request(app)
       .post(`/v1/capture_intent/${validPaymentIntentId}`);
 
     expect(response.status).toBe(200);
-    // Add more assertions if needed
   });
 
   it('should handle errors while capturing a payment intent', async () => {
@@ -49,7 +47,6 @@ describe('POST /v1/capture_intent/:id', () => {
 
 describe('POST /create_refund/:id', () => {
   it('should create a refund for a payment intent', async () => {
-    // Assume you have a valid payment intent ID
     const validPaymentIntentId = 'pi_3Od9EpSDFbeIRnXw0QI9IccW';
 
     const response = await request(app)
@@ -60,7 +57,6 @@ describe('POST /create_refund/:id', () => {
       });
 
     expect(response.status).toBe(200);
-    // Add more assertions if needed
   });
 
   it('should handle errors while creating a refund', async () => {
@@ -79,7 +75,6 @@ describe('GET /v1/get_intents', () => {
       .get('/v1/get_intents');
 
     expect(response.status).toBe(200);
-    // Add more assertions if needed
   });
 
   it('should handle errors while fetching payment intents', async () => {
